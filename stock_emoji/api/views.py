@@ -26,7 +26,7 @@ class Product_create_apiview(ListCreateAPIView):
   serializer_class = Decathlon_Products_serializers_create
 
 
-
+# api view to get and put product details
 @api_view(['PUT','GET'])
 def Stores_product_api(request,store_id,product_id):
    if request.method == 'PUT':

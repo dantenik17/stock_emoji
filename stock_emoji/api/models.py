@@ -14,7 +14,7 @@ class Decathlon_Stores(models.Model):
 class Decathlon_Products(models.Model):
     ProductID  = models.IntegerField(primary_key=True)
     ProductName  = models.CharField(max_length=100)
-    ProductSport =models.CharField(max_length=100)
+    ProductSport =models.TextField()
     ProductLevel =models.CharField(max_length=100)
     ProductDescription  = models.TextField()
     #AssociatedStores = ForeignKey(Decathlon_Stores,on_delete=models.CASCADE)
